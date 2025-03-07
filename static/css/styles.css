@@ -1,0 +1,518 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background: #c82333;
+}
+
+/* Main Content */
+.content {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #007BFF;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+/* Main Header */
+.hero {
+    background: #004080; /* Change header color */
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Left side - Text */
+.hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Right side - Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Career Counseling */
+
+
+/* FAQ/* Career Counseling Section */
+.career-counseling {
+    padding: 40px;
+    text-align: center;
+}
+
+
+/* Testimonials */
+.testimonials {
+    padding: 40px;
+}
+
+.testimonial-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+/* Career Resources */
+.resources {
+    padding: 30px;
+}
+
+.resources a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #007BFF;
+    color: white;
+    padding: 30px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: white;
+    color: #007BFF;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary { background: #007BFF; color: white; }
+.btn-success { background: #28A745; color: white; }
+.btn-info { background: #17A2B8; color: white; }
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+ 
+    
+
+  
+
+  
+
+
+  /* Login Page Styles */
+body.login-page {
+    background: white; /* Consistent with other pages */
+    color: maroon;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #f8f8f8; /* Light background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: maroon;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #800000;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background: #a52a2a;
+}
+
+.login-container p {
+    margin-top: 15px;
+}
+
+.login-container a {
+    color: maroon;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* Apply maroon and white theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #450000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002b45;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #450000;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #fff;
+    color: #450000;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero_bg.jpg') no-repeat center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    height: 80vh; /* Adjust the height if needed */
+}
+
+
+.hero h1 {
+    color: #450000;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Section Styling */
+.career-counseling, .testimonials, .faq, .resources, .newsletter {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+    color: #450000;
+}
+
+h2 {
+    color: #450000;
+}
+
+/* FAQ Styling */
+.faq-item {
+    border: 1px solid #450000;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.hero p {
+    font-size: 18px;
+    color: #450000;  /* Change this from light gray to a dark maroon */
+    font-weight: 500;
+}
+/* Navbar Buttons */
+.navbar .btn {
+    background-color: white;  /* Keep the buttons visible */
+    color: maroon;  /* Text color to match the theme */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid maroon;
+    transition: 0.3s;
+}
+
+.navbar .btn:hover {
+    background-color: maroon;
+    color: white;
+}
+.hero {
+    margin-top: -10px; /* Moves the entire section up */
+    padding: 40px 10%; /* Adjust padding if needed */
+}
+.hero-content {
+    display: flex;
+    align-items: center; /* Ensures text and image are aligned */
+    justify-content: space-between; /* Keeps space between text and image */
+    margin-top: -120px; /* Moves both text and image up */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-hero {
+    background: url("{{ url_for('static', filename='images/about-bg.jpg') }}") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+

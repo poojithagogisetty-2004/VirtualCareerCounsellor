@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Virtual Career Counselor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        .contact-hero {
+            background: url("{{ url_for('static', filename='images/home bckgrnd.jpg') }}") no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .contact-hero h1, .contact-hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-content {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Virtual Career Counselor</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/register" class="btn btn-primary">Sign Up</a></li>
+            <li><a href="/login" class="btn btn-success">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <header class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </header>
+
+    <!-- Contact Content Section -->
+    <section class="contact-content">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:support@virtualcareercounselor.com">support@virtualcareercounselor.com</a></p>
+        <p>Phone: +1234567890</p>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+    </section>
+
+   

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Career Counselor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        .hero {
+            background: url("{{ url_for('static', filename='images/home bckgrnd.jpg') }}") no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .how-it-works, .what-we-offer {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+        .steps, .offers {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .step, .offer {
+            text-align: center;
+            max-width: 300px;
+        }
+        .step img, .offer img {
+            width: 50px;
+            height: 50px;
+        }
+        .testimonials {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .testimonial-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+        .testimonial-box img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .stars {
+            color: #f4c542;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Virtual Career Counselor</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/register" class="btn btn-primary">Sign Up</a></li>
+            <li><a href="/login" class="btn btn-success">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Find Your Career Path with AI</h1>
+                <p>We help you choose the best career path based on your skills and interests.</p>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/background.png') }}" alt="Career Guidance">
+            </div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="{{ url_for('static', filename='images/signup.png') }}" alt="Sign Up">
+                <h3>Sign Up</h3>
+                <p>Create your account to access personalized career guidance.</p>
+            </div>
+            <div class="step">
+                <img src="{{ url_for('static', filename='images/recommendations.png') }}" alt="Get Recommendations">
+                <h3>Get Recommendations</h3>
+                <p>Receive tailored career paths, courses, and job market trends.</p>
+            </div>
+            <div class="step">
+                <img src="{{ url_for('static', filename='images/skill-gap.png') }}" alt="Skill Gap Analysis">
+                <h3>Skill Gap Analysis</h3>
+                <p>Identify skills needed and resources to bridge gaps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="what-we-offer">
+        <h2>What We Offer</h2>
+        <div class="offers">
+            <div class="offer">
+                <img src="{{ url_for('static', filename='images/career-paths.png') }}" alt="Career Paths">
+                <h3>Personalized Career Paths</h3>
+                <p>Receive AI-driven career suggestions based on your skills and interests.</p>
+            </div>
+            <div class="offer">
+                <img src="{{ url_for('static', filename='images/courses.png') }}" alt="Course Recommendations">
+                <h3>Course Recommendations</h3>
+                <p>Get tailored course recommendations to advance your career.</p>
+            </div>
+            <div class="offer">
+                <img src="{{ url_for('static', filename='images/job-trends.png') }}" alt="Job Market Trends">
+                <h3>Job Market Trends</h3>
+                <p>Stay updated with the latest trends in the job market to make informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Reviews</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <img src="{{ url_for('static', filename='images/userA.jpg') }}" alt="User A">
+                <h3>Dhruvi</h3>
+                <p>"This platform helped me land my dream job!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonial-box">
+                <img src="{{ url_for('static', filename='images/userB.jpg') }}" alt="User B">
+                <h3>Dan</h3>
+                <p>"The AI recommendations were spot on!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Resources Section -->
+    <section class="resources">
+        <h2>Career Resources</h2>
+        <p>Read blogs, tips, and guides to help you advance in your career.</p>
+        <a href="#" class="btn btn-info">Explore Resources</a>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

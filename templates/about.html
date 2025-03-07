@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Virtual Career Counselor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        .about-hero {
+            background: url("{{ url_for('static', filename='images/home bckgrnd.jpg') }}") no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .about-content {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Virtual Career Counselor</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/register" class="btn btn-primary">Sign Up</a></li>
+            <li><a href="/login" class="btn btn-success">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Hero Section -->
+    <header class="about-hero">
+        <h1>About Us</h1>
+        <p>Empowering careers with AI-driven guidance</p>
+    </header>
+
+    <!-- About Content Section -->
+    <section class="about-content">
+        <h2>Our Mission</h2>
+        <p>Virtual Career Counselor is a platform designed to help students and professionals navigate their career paths by providing insights into career options, required skills, and market trends.</p>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

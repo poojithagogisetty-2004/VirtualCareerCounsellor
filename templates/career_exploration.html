@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Exploration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/career_exploration.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Career Exploration</h1>
+        <nav>
+            <a href="{{ url_for('dashboard') }}"> Home</a>
+            <a href="{{ url_for('logout') }}" class="logout-btn">🚪 Logout</a>
+        </nav>
+    </header>
+    
+ 
+    
+
+    <main>
+        <section class="container">
+            <h2>Explore Career Paths</h2>
+            <p>Find the career that aligns with your skills and passion.</p>
+
+            <div class="career-section">
+                <h3>💻 Software Development</h3>
+                <p>Learn about web development, AI, and more.</p>
+            </div>
+
+            <div class="career-section">
+                <h3>📊 Data Science</h3>
+                <p>Analyze and interpret complex data to make informed decisions.</p>
+            </div>
+
+            <div class="career-section">
+                <h3>🏢 Business Management</h3>
+                <p>Learn about finance, management, and statistics.</p>
+            </div>
+
+            <a href="{{ url_for('dashboard') }}" class="back-btn">Back to Dashboard</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Virtual Career Counselor</p>
+    </footer>
+
+</body>
+</html>

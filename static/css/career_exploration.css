@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: white; /* White background */
+    color: maroon; /* Maroon text for visibility */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: maroon;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.logout-btn {
+    background: white;
+    color: maroon;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+}
+
+/* Career Section Styling */
+.career-section {
+    background: #f8f8f8; /* Light grey for contrast */
+    color: maroon;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background-color: darkred;
+}
+
+/* Footer */
+footer {
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+   
+
+
+
+ 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Virtual Career Counselor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome, {{ name }}</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('career_counsel') }}">Counsel</a></li>
+                <li><a href="{{ url_for('career_path') }}">Career Path</a></li>
+                <li><a href="{{ url_for('course_recommendations') }}">Course Recommendations</a></li>
+                <li><a href="{{ url_for('job_market_trends') }}">Job Market Trends</a></li>
+                <li><a href="{{ url_for('career_exploration') }}">Career Exploration</a></li>
+                <li><a href="{{ url_for('logout') }}" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-banner">
+            <div class="banner-content">
+                <h2>Your Career Dashboard</h2>
+                <p>Explore career options, get recommendations, and stay updated with job trends.</p>
+            </div>
+        </section>
+        <div class="dashboard-quote">
+            <p>"Your career journey starts here. Take the next step!"</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Virtual Career Counselor. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

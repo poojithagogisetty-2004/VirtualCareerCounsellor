@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Career Counselor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4c6b6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #8b0000;
+        }
+        .input-box {
+            background-color: #f4d3c4;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e0f0ff;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            background-color: #5c0a02;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #3a0700;
+        }
+        .footer {
+            text-align: center;
+            background-color: #5c0a02;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Career Counselor</h1>
+
+        <!-- Career Path Form -->
+        <div class="input-box">
+            <form action="{{ url_for('career_counsel') }}" method="POST">
+                <label>Enter a career name for a career path:</label>
+                <input type="text" name="career" placeholder="Enter career name" required>
+                <button type="submit" class="button">Get Career Path</button>
+            </form>
+        </div>
+
+        <!-- Course Recommendations Form -->
+        <div class="input-box">
+            <form action="{{ url_for('course_recommendations') }}" method="POST">
+                <label>Enter your preferences for course recommendations:</label>
+                <input type="text" name="preference" placeholder="Enter preference" required>
+                <button type="submit" class="button">Get Course Recommendations</button>
+            </form>
+        </div>
+
+        <!-- Job Market Trends Form -->
+        <div class="input-box">
+            <form action="{{ url_for('job_market_trends') }}" method="POST">
+                <label>Enter a career name for job market trends:</label>
+                <input type="text" name="career" placeholder="Enter career name" required>
+                <button type="submit" class="button">Get Job Market Trends</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Virtual Career Counselor. All Rights Reserved.
+    </div>
+</body>
+</html>
